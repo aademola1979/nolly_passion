@@ -14,7 +14,7 @@ const router = express.Router();
 router.get('/api/blogs', getAllBlogs);
 
 //GET a single blog
-router.get('/api/blog/:id', getSingleBlog)
+router.get('/api/blogs/:id', getSingleBlog)
 
 //Protecting routes
 router.use(requireAuth)
