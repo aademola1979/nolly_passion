@@ -9,6 +9,10 @@ const config = require('dotenv').config()
 var PORT = process.env.PORT || 400
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const loginRouter = require('./routes/loginRouter')
+const signupRouter = require('./routes/signupRouter')
+
+
 const user = require('./routes/userRoute');
 const blog = require('./routes/blogRoute')
 
@@ -26,6 +30,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/signup', signupRouter);
+app.use('/login', loginRouter);
+
+
 app.use('/', user);
 app.use('/', blog)
 

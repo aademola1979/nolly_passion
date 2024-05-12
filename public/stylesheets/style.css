@@ -45,21 +45,27 @@ header>section{
   padding-block: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  color: white;
+  justify-content: space-around;
 }
 
 
 
-nav>a{
+nav>a, header>section>div>a{
   color: white;
   text-decoration: none;
+  padding: 4px;
+  border-bottom: 0px;
+  font-size: 16px;
+}
+nav>a:hover{
+  border-bottom: 1px;
+  border-color: white;
 }
 
 nav{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+
 }
 
 p{
@@ -117,4 +123,5 @@ a {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   gap: 1rem;
+  z-index: 10;
 }

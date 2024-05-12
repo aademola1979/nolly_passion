@@ -1,12 +1,6 @@
 extends layout
 
-block header-content
-  section(id="header" class="container")
-    nav(id="nav") 
-      a(class="nav-item" href="/") Home 
-      a(class="nav-item" href="/about") About
-      a(class="nav-item" href="/contact") Contact
-    div hi
+
 block main-content
   section
     div(id="hero")
@@ -16,13 +10,4 @@ block main-content
         h1= title
         p Welcome to #{title}! This is a platform for you to, in the form of blogging, express your passion for Nigerian movies. 
         p Moreover, you can do more than writing about the movies, you can search for movies according to your interest and passions.
-block footer-content
-  section(id="footer")
-    div(id="upper-footer")
-      div
-        div
-          span
-          span
-    div(id="lower-footer")
-      div
-        p copyright pragmatech 2024
+
