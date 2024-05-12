@@ -5,26 +5,12 @@ html(ang="en")
     title= title
     meta(charset="UTF-8")
     meta(meta name="viewport" content="width=device-width, initial-scale=1.0" )
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet' href='/stylesheets/style.css')
   body
     header
-        section(id="" class="container")
-          nav(id="nav") 
-            a(class="nav-item" href="/") Home 
-            a(class="nav-item" href="/about") About
-            a(class="nav-item" href="/contact") Contact
-          div(id="")
-            a(class="nav-item" href="/login") Login
-            a(class="nav-item" href="/signup") Sign Up
+      include header   
     main
       block main-content
     footer
-      section(id="footer")
-        div(id="upper-footer")
-          div
-          div
-          span
-          span
-        div(id="lower-footer")
-        div
-          p copyright pragmatech 2024
+      include footer
+      
