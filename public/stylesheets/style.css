@@ -306,7 +306,13 @@ form button:hover{
   background-color: rgb(2, 90, 2);
 }
 
+/*_________________________________________________________________________________*/
 
+/*footer Styles*/
+footer{
+  padding-block: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
 
 
 
