@@ -8,7 +8,7 @@ const router = express.Router();
 router.post("/api/users/signup", signUp)
 
 //Sign In route
-router.post("/api/users/signin", signIn)
+router.post("/api/users/login", signIn)
 
 
 

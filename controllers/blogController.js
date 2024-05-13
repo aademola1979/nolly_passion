@@ -54,7 +54,8 @@ const getAllBlogs = async (req, res)=> {
         .skip(page * booksPerpage)
         .limit(booksPerpage)
 
-        res.status(200).json(blogs) 
+        res.status(200).json(blogs)
+         
     } catch (error) {
         res.status(400).json({error:error.message})
         

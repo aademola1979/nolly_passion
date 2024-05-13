@@ -1,1 +1,33 @@
-extends layout 
+extends layout
+
+
+block main-content
+    section(class="form-container flex w-full h-full justify-center items-center")
+        form(class="grid" action="")
+            div(class="form-greeting grid")
+                h3 Welcome!
+             div(class="grid") 
+                label() First Name 
+                    sup *
+                input(type="text" class="w-full" placeholder="Rahim" name="email" id ="first_name" require)
+            div(class="grid") 
+                label() Last Name
+                    sup * 
+                input(type="password" class="full" placeholder="Kenny" name="last_name" id="last_name" require)
+            div(class="grid") 
+                label() Email 
+                    sup *
+                input(type="text" class="w-full" placeholder="samkyc@gmail.com" name="email" id ="email" require)
+            div(class="grid") 
+                label() Paswsord
+                    sup * 
+                input(type="password" class="full" name="password" id="email" require)
+            div(class="grid") 
+                label() Confirm Paswsord
+                    sup * 
+                input(type="password" class="full" name="confirmPassword" id="confirmpassword" require)
+            button(type="submit") Sign Up
+            div 
+            p Already have an coount? 
+            a(href="/login")  Login
+        

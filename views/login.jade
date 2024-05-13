@@ -1,3 +1,21 @@
 extends layout
 
+
 block main-content
+    section(class="form-container flex w-full h-full justify-center items-center")
+        form(class="grid" action="/api/users/login" method="post")
+            div(class="form-greeting grid")
+                h3 Welcome back!
+            div(class="grid") 
+                label() Email 
+                    sup *
+                input(type="text" class="w-full" placeholder="samkyc@gmail.com" value="" name="email" id ="email" require=true)
+            div(class="grid") 
+                label() Paswsord
+                    sup * 
+                input(type="password" class="full" name="password" vslue="" id="email" require=true)
+            button(type="submit") Login
+            div 
+            p Don't have an coount? 
+            a(href="/signup")  Sign up
+        

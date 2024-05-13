@@ -1,11 +1,12 @@
-section(id="" class="container")
-        div 
-          span Nolly 
-          span Passion 
-        nav(id="nav") 
-          a(class="nav-item" href="/") Home 
-          a(class="nav-item" href="/about") About
-          a(class="nav-item" href="/contact") Contact
-        div(id="")
-          a(class="nav-item" href="/login") Login
-          a(class="nav-item" href="/signup") Sign Up
+section(id="" class="flex container")
+    a(class="nav-item" href="/")  
+        span Nolly 
+        span Passion 
+    div(id="nav-container" class="justify-around items-center flex-1")
+        nav(id="nav" class="items-center justify-around flex flex-1") 
+            a(class="nav-item" href="/") Home 
+            a(class="nav-item" href="/about") About
+            a(class="nav-item" href="/contact") Contact
+        div(id="login-signup-container" class="flex items-center flex-1")
+            a(class="nav-item" href="/login") Login
+            a(class="nav-item" href="/signup") Sign Up
