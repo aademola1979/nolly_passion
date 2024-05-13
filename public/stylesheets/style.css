@@ -306,6 +306,10 @@ form button:hover{
   background-color: rgb(2, 90, 2);
 }
 
+.cta{
+  color: limegreen;
+}
+
 /*_________________________________________________________________________________*/
 
 /*footer Styles*/

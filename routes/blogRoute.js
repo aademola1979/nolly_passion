@@ -11,11 +11,7 @@ const requireAuth = require('../middleware/RequireAuth.js')
 const router = express.Router();
 
 //GET all blogs
-router.get('/api/blogs', function(req, res, next){
-    res.render('index', {data: getAllBlogs})
-
-}
-);
+router.get('/api/blogs', getAllBlogs);
 
 //GET a single blog
 router.get('/api/blogs/:id', getSingleBlog)
