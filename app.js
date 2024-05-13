@@ -9,8 +9,10 @@ const config = require('dotenv').config()
 var PORT = process.env.PORT || 400
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const loginRouter = require('./routes/loginRouter')
-const signupRouter = require('./routes/signupRouter')
+const loginRouter = require('./routes/loginRouter');
+const signupRouter = require('./routes/signupRouter');
+const contactRouter = require('./routes/contactRouter')
+const aboutRouter = require('./routes/aboutRouter')
 
 
 const user = require('./routes/userRoute');
@@ -32,6 +34,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/signup', signupRouter);
 app.use('/login', loginRouter);
+app.use('/contact', contactRouter);
+app.use('/about', aboutRouter);
 
 
 app.use('/', user);
